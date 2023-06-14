@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace nBird
 {
-    internal class Penguin : Bird
+    class Penguin : Bird
     {
-        public void Sit()
+        public override void Fly()
         {
-            Console.WriteLine("sitting");
+            Console.Error.WriteLine("Warning");
+            Console.Error.WriteLine("FLying Penguin Alert");
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nBird
 {
-    internal class Bird 
+    class Bird 
     {
         public virtual void Fly()
         {

@@ -8,11 +8,13 @@ namespace nBird
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            Bird steven = new Penguin();
-
+            Penguin steven = new Penguin();
             steven.Fly();
         }
     }
+
+
 }
