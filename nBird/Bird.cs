@@ -1,16 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace nBird
 {
-    class Bird 
+    class Bird
     {
-        public virtual void Fly()
+        public static Random Randomizer = new Random();
+        public virtual Egg[] LayEggs(int numberOfEggs)
         {
-            Console.WriteLine("Me fly");
+            Console.Error.WriteLine("Bird.LayEggs should never get called");
+            return new Egg[0];
         }
     }
 }
