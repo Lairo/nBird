@@ -2,18 +2,18 @@
 
 namespace nBird
 {
-    internal class Egg
+    class Egg
     {
         public double Size { get; private set; }
-        public String Colour { get; private set; }
-        public Egg(double size, string colour)
+        public string Color { get; private set; }
+        public Egg(double size, string color)
         {
             Size = size;
-            Colour = colour;
+            Color = color;
         }
         public string Description
         {
-            get { return $"A {Size:0:0}cm {Colour} egg;"; }
+            get { return $"A {Size:0.0}cm {Color} egg"; }
         }
     }
 }
