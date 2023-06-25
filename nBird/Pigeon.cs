@@ -10,16 +10,16 @@ namespace nBird
             if (numberOfEggs > MAXIMUMEGGS)
             {
                 numberOfEggs = MAXIMUMEGGS;
-                Console.WriteLine("Pigeons can only lay between 1-2eggs at a time");
+                Console.WriteLine("Pigeons can only lay between 1-2 eggs at a time");
             }
 
             Egg[] eggs = new Egg[numberOfEggs];
             for (int i = 0; i < numberOfEggs; i++)
             {
                 if (Bird.Randomizer.Next(4) == 0)
-                    eggs[i] = new BrokenEgg("white");
+                    eggs[i] = new BrokenEgg(i, "white");
                 else
-                    eggs[i] = new Egg(Bird.Randomizer.NextDouble() * 2 + 1, "white");
+                    eggs[i] = new Egg(i, Bird.Randomizer.NextDouble() * 2 + 1, "white");
             }
             return eggs;
 

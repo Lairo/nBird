@@ -4,9 +4,9 @@ namespace nBird
 {
     class BrokenEgg : Egg
     {
-        public BrokenEgg(string color) : base(0, $"broken {color}")
+        public BrokenEgg(int number, string color) : base(number, double.NegativeInfinity, $"broken {color}")
         {
-            Console.WriteLine("A bird laid a broken egg");
+            Console.WriteLine($"Pigeon bird laid a broken egg");
         }
     }
 }
